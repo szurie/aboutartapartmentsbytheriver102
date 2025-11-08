@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AboutArtApartments - By the river</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-wejcie-do-azienki">
+        <li class="text">Wejście do łazienki</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-azienka-wejcie">
+        <li class="text">Łazienka wejście</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-kabina-prysznicowa">
+        <li class="text">Kabina prysznicowa</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-toaleta">
+        <li class="text">Toaleta</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-umywalka">
+        <li class="text">Umywalka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-komoda">
+        <li class="text">Komoda</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-drzwi-balkonowe">
+        <li class="text">Drzwi balkonowe</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-okno">
+        <li class="text">Okno</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-drzwi-azienkowe-zamknite">
+        <li class="text">Drzwi łazienkowe zamknięte</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-balkon-lewa-strona">
+        <li class="text">Balkon lewa strona</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-balkon-stolik">
+        <li class="text">Balkon stolik</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-szafa-w-korytarzu">
+        <li class="text">Szafa w korytarzu</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-sejf">
+        <li class="text">Sejf</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-szafa-na-ubrania">
+        <li class="text">Szafa na ubrania</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-pralka">
+        <li class="text">Pralka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-stolik-kuchenny">
+        <li class="text">Stolik kuchenny</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-wejcie-do-apartamentu">
+        <li class="text">Wejście do apartamentu</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-lodwka">
+        <li class="text">Lodówka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-videofon">
+        <li class="text">Videofon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-klatka-schodowa">
+        <li class="text">Klatka schodowa</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-aneks-kuchenny">
+        <li class="text">Aneks Kuchenny</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-zmywarka">
+        <li class="text">Zmywarka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-ko">
+        <li class="text">Łóżko</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-ko-wezgowie">
+        <li class="text">Łóżko wezgłowie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-telewizor">
+        <li class="text">Telewizor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-dodatkowe-ko">
+        <li class="text">Dodatkowe łóżko</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
